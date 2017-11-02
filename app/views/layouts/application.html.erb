@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FotoReda</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <!--NAVBARS AND HEADERS HERE-->
+    <%= yield %>
+    <nav>
+      <p>
+        Return to <%= link_to 'root', '/' %>
+      </p>
+    </nav>
+  </body>
+</html>
